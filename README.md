@@ -12,12 +12,34 @@ private constructor to create an object and save it in a static field and return
   for example, a single database object shared by different parts of the program. 
 - when you need stricter control over global variables. Unlike global variables, the Singleton pattern guarantees
   that there’s just one instance of a class. Nothing, except for the Singleton class itself, can replace the cached instance.
-  
+
+![Alt text](./images/singleton.png?raw=true "title")
+
+![Alt text](./images/singletoncd.png?raw=true "title")
+
 References:
 - https://refactoring.guru/design-patterns/singleton
 - https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples
 
-## Proxy Design Pattern ##
+## Factory ##
+- another creational design pattern that provides an interface for creating objects in a superclass but allows
+  subclasses to alter the type of objects that will be created.
+- is used when we have a superclass and multiple sub-classes and based on input we need to return one of the sub-class.
+  
+*Applicability*
+- when we don't know beforehand the exact type and dependencies of the objects the code should work with.
+- when we want to provide a way to extend the internal components. For instance, in existing payment methods, we want to
+  allow extending the payment through other process in future.
+- when you want to save system resources by reusing existing objects instead of rebuilding them each time.
+
+![Alt text](./images/factory_design_pattern.png?raw=true "title")
+
+References:
+- https://www.journaldev.com/1392/factory-design-pattern-in-java
+- https://refactoring.guru/design-patterns/factory-method
+- https://www.sourcecodeexamples.net/2017/12/factory-design-pattern.html
+
+## Proxy  ##
 
 Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy
 controls the access to the original object, allowing to perform something either before or after the request gets through
@@ -30,7 +52,6 @@ For heavy Java object like JDBC connection, or a SessionFactory that requires so
 them to be initialized on demand. And once they are initialized, we want to reuse them for all calls.
 
 ![Alt text](./images/proxy.jpg?raw=true "title")
-
 
 *When to Use*
 - *When we want a simplified version of a complex or heavy object*.
