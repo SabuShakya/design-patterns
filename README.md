@@ -39,6 +39,27 @@ References:
 - https://refactoring.guru/design-patterns/factory-method
 - https://www.sourcecodeexamples.net/2017/12/factory-design-pattern.html
 
+## Abstract Factory ##
+- A creational design pattern that lets you produce families of related objects without specifying their concrete classes.
+
+## Builder ##
+- design pattern that lets you construct complex objects step by step. It allows to produce different types and 
+  representation of an object using same construction code.
+- it can be used when and object has a lot of attributes.
+
+*Applicability*
+- Use the Builder pattern to get rid of a “telescopic constructor”. When we have ten or more optional parameters, it 
+  is inconvenient to create a constructor with all those parameters. Instead, with overload constructor and 
+  create several constructors with few parameters. Builder pattern allows to build objets step by step using the
+  parameters that we only need. It removes the necessity of creating multiple constructors with different parameters.
+- Use it when you want to create different representations of some product.
+
+![Alt text](./images/builder.png?raw=true "builder")
+
+References:
+- https://refactoring.guru/design-patterns/builder
+
+
 ## Proxy  ##
 
 Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy
