@@ -59,6 +59,16 @@ References:
 References:
 - https://refactoring.guru/design-patterns/builder
 
+## Prototype ##
+- Design pattern that lets you copy existing objects without making the code dependent on their classes.
+- Used when creation of object directly is costly.
+- For instance, an object to be created after a costly database operation. The object can be cached and return its clone 
+on next request.
+
+![Alt text](./images/prototype.png?raw=true "prototype")
+
+References:
+- [Prototype](https://refactoring.guru/design-patterns/prototype)
 
 ## Proxy  ##
 
