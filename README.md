@@ -70,6 +70,23 @@ on next request.
 References:
 - [Prototype](https://refactoring.guru/design-patterns/prototype)
 
+## Object Pool ##
+
+When objects are expensive to create, and they are needed only for short periods of time it is advantageous to utilize 
+the Object Pool pattern. The Object Pool provides a cache for instantiated objects tracking which ones are in use 
+and which are available.
+
+Object pool pattern is a software creational design pattern which is used in situations where the cost of initializing 
+a class instance is very high.
+Basically, an Object pool is a container which contains some amount of objects. So, when an object is taken from 
+the pool, it is not available in the pool until it is put back.
+
+![Alt text](./images/Object_pool.png?raw=true "object_pool")
+
+References:
+- https://www.sourcecodeexamples.net/2018/05/object-pool-design-pattern.html
+- https://sourcemaking.com/design_patterns/object_pool
+
 ## Proxy  ##
 
 Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy
