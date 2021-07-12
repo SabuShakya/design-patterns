@@ -87,13 +87,27 @@ References:
 - https://www.sourcecodeexamples.net/2018/05/object-pool-design-pattern.html
 - https://sourcemaking.com/design_patterns/object_pool
 
+Structural Design pattern explain how to assemble objects and classes into larger structure while keeping these 
+structures flexible and efficient.
+
+## Adapter ##
+- Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
+
+![Alt text](./images/adapter.png?raw=true "title")
+
+![Alt text](./images/adapter1.png?raw=true "title")
+
+References:
+- https://medium.com/@pramodayajayalath/adapter-design-pattern-3307ada690db
+- https://refactoring.guru/design-patterns/adapter
+
 ## Proxy  ##
 
 Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy
 controls the access to the original object, allowing to perform something either before or after the request gets through
 to the original object.
 
-Proxies delegate all of the real work to some other object. Each proxy method should, in the end,
+Proxies delegate all the real work to some other object. Each proxy method should, in the end,
 refer to a service object unless the proxy is a subclass of a service.
 
 For heavy Java object like JDBC connection, or a SessionFactory that requires some initial configuration, we only want
